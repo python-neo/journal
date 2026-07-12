@@ -1,4 +1,20 @@
+Screen {
+    layout: vertical;
+}
+
 #main {
-    height: 1fr;
     width: 1fr;
+    height: 1fr;
+}
+
+Prompt {
+    align: center middle;
+}
+
+#dialog {
+    width: 60;
+    height: auto;
+    padding: 1 2;
+    border: none;
+    background: $surface;
 }

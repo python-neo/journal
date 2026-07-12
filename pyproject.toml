@@ -8,6 +8,7 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = [
+    "argon2-cffi>=25.1.0",
     "pycryptodome>=3.23.0",
     "textual>=8.2.8",
 ]
@@ -15,6 +16,14 @@ dependencies = [
 [project.scripts]
 journal = "journal:main.main"
 
+[project.optional-dependencies]
+dev = [
+    "ruff"
+]
+
 [build-system]
 requires = ["uv_build>=0.11.16,<0.12.0"]
 build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 88
